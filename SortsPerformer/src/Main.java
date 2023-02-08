@@ -4,6 +4,8 @@ public class Main {
         //Implementation sample
 
         //Random array
+        FileGenerator fg = new FileGenerator();
+        fg.FileGenerator(15, true);
         int[] unsortArray = {1,2,4,2,332,23,2}; //Array will be given then.
 
         // Sort function Call

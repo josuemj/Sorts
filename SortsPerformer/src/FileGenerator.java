@@ -2,25 +2,25 @@ import java.io.*;
 import java.util.Random;
 
 public class FileGenerator {
-    public void FileGenerator(int n){
-        int[] NumberList = ShuffledArray(n);
-        String NumberString;
+    public void FileGenerator(int n, boolean ordered){
+        int[] NumberList = ShuffledArray(n, ordered);
         try{
             FileWriter fw = new FileWriter("Number_File.txt");
-            BufferedWriter w = new BufferedWriter(fw);
+            BufferedWriter bw = new BufferedWriter(fw);
             for (int i = 0; i<n;i++){
                 if(i!=n-1){
-                    NumberString = NumberList[i]+" ";
+                    bw.write(NumberList[i]+" ");
                 } else{
-                    NumberString = NumberList[i]+"";
+                    bw.write(NumberList[i]+"");
                 }
             }
+            bw.close();
         } catch (Exception e){
             System.out.println("No existe el archivo");
         }
     }
 
-    public int[] ShuffledArray(int n){
+    public int[] ShuffledArray(int n, boolean ordered){
         Random rand = new Random();
         int randIndex;
         int temp;
@@ -28,11 +28,13 @@ public class FileGenerator {
         for(int i= 0; i<n; i++){
             NumberList[i] = i;
         }
-        for(int i=0;i<n; i++){
-            randIndex = rand.nextInt(n);
-            temp = NumberList[i];
-            NumberList[i] = NumberList[randIndex];
-            NumberList[randIndex] = temp;
+        if(ordered){
+            for(int i=0;i<n; i++){
+                randIndex = rand.nextInt(n);
+                temp = NumberList[i];
+                NumberList[i] = NumberList[randIndex];
+                NumberList[randIndex] = temp;
+            }
         }
         return NumberList;
     }
