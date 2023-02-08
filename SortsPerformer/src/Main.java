@@ -10,20 +10,14 @@ public class Main {
         //RadixSort.radixsort(unsortArray, unsortArray.length); //Checked
         //GnomeSort.gnomeSort(unsortArray,unsortArray.length); //Checked
         //InsertionSort.insertionSort(unsortArray,unsortArray.length); //Checked
-        //QuickSort.quickSort(unsortArray,0,unsortArray.length-1);
+        //QuickSort.quickSort(unsortArray,0,unsortArray.length-1); // Checked
+
+
 
 
         for(int i = 0; i<unsortArray.length;i++){
             System.out.println(unsortArray[i]);
         }
-
-
-        //                    array               Start                       end
-
-
-
-
-
 
     }
 }
