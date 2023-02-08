@@ -10,7 +10,7 @@ public class InsertionSort {
      * @param arr
      * @param n
      */
-    public static void insertionSort(int arr[], int n)
+    public void insertionSort(int arr[], int n)
     {
         if (n <= 1)
         {
