@@ -9,7 +9,7 @@ public class GnomeSort {
      * @param arr
      * @param n
      */
-    public void gnomeSort(int arr[], int n) {
+    public int[] gnomeSort(int arr[], int n) {
         int index = 0;
 
         while (index < n) {
@@ -25,5 +25,6 @@ public class GnomeSort {
                 index--;
             }
         }
+        return arr;
     }
 }

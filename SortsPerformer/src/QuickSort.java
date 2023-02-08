@@ -50,13 +50,14 @@ public class QuickSort {
      * @param low low --> Starting index,
      * @param high high --> Ending index
      */
-    static void quickSort(int[] arr, int low, int high)
+    static int[] quickSort(int[] arr, int low, int high)
     {
         if (low < high) {
             int pi = partition(arr, low, high);
             quickSort(arr, low, pi - 1);
             quickSort(arr, pi + 1, high);
         }
+        return arr;
     }
 }
 

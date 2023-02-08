@@ -68,7 +68,7 @@ public class MergeSort {
      * @param l
      * @param r
      */
-    public void sort(int arr[], int l, int r)
+    public int[] sort(int arr[], int l, int r)
     {
         if (l < r) {
             // Find the middle point
@@ -81,5 +81,6 @@ public class MergeSort {
             // Merge the sorted halves
             merge(arr, l, m, r);
         }
+        return arr;
     }
 }

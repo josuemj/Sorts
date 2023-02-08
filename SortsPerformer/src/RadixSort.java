@@ -54,10 +54,12 @@ public class RadixSort {
      * @param arr
      * @param n
      */
-    static void radixsort(int arr[], int n)
+    static int[] radixsort(int arr[], int n)
     {
         int m = getMax(arr, n);
         for (int exp = 1; m / exp > 0; exp *= 10)
             countSort(arr, n, exp);
+        return arr;
     }
+
 }

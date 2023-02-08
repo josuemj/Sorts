@@ -10,6 +10,13 @@ public class InsertionSort {
      * @param arr
      * @param n
      */
+    private int[] OrderedArray;
+    public int[] sort(int[] arr, int n){
+        OrderedArray = arr;
+        insertionSort(arr, n);
+        return OrderedArray;
+    }
+
     public void insertionSort(int arr[], int n)
     {
         if (n <= 1)
