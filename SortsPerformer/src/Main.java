@@ -1,6 +1,6 @@
 import java.io.*;
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //A
         View vw = new View();
         FileGenerator fg = new FileGenerator();
         boolean Active = true;
