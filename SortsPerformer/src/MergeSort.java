@@ -13,7 +13,7 @@ public class MergeSort {
      * @param m
      * @param r
      */
-    void merge(int arr[], int l, int m, int r)
+    public static void merge(int arr[], int l, int m, int r)
     {
         // Find sizes of two subarrays to be merged
         int n1 = m - l + 1;
@@ -68,7 +68,7 @@ public class MergeSort {
      * @param l
      * @param r
      */
-    void sort(int arr[], int l, int r)
+    public static void sort(int arr[], int l, int r)
     {
         if (l < r) {
             // Find the middle point

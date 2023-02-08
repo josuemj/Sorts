@@ -11,8 +11,7 @@ public class Main {
         //GnomeSort.gnomeSort(unsortArray,unsortArray.length); //Checked
         //InsertionSort.insertionSort(unsortArray,unsortArray.length); //Checked
         //QuickSort.quickSort(unsortArray,0,unsortArray.length-1); // Checked
-
-
+        //MergeSort.sort(unsortArray,0,unsortArray.length-1);
 
 
         for(int i = 0; i<unsortArray.length;i++){
